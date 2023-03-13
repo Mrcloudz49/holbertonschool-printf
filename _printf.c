@@ -58,6 +58,10 @@ int _printf(const char *format, ...)
 			i += 2;
 			continue;
 		}
+		if (!format[i + 1])
+			return (-1);
+		_putchar(format[i]);
+		count++;
 		if (format[i + 1] == '%')
 			i += 2;
 		else
