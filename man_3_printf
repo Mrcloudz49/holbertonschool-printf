@@ -1,0 +1,47 @@
+.TH man 3 "March 2023" "_printf man page"
+
+.SH NAME
+_printf
+-re-creation of the printf function
+
+.SH SYNOPSIS
+#inlcude "main.h"
+
+int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The _printf() fucntion sends a formatted string to the standard output. 
+Format specifications, beginning with a percent sign (%)
+
+.SH EXAMPLES
+%c: character 
+Input:	_printf("The first letter in aht alphabet is %c\n", 'A');
+Output: The first letter in the aplhabet is A integer
+
+%s: string 
+Input: _printf("%s\n",'This is a string.')
+Output: This is a string.
+
+%d: decimal
+Input: _printf("%d\n",1000);
+Output: 1000
+
+%i: integer 
+Input: _printf("There are %i dozens in a gross\n", 12);
+Output: There are 12 dozens in a gross decimal
+
+.SH SEE ALSO
+Printf()
+
+.SH BUGS
+No known bugs
+
+.SH AUTHOR
+Alex Shawnee | 5577holbertonstudent.com
+
+.SH COPYRIGHT
+none
+
+.SH RETURN VALUE
+It returns the number of characters that printed. 
+If there is error then it returns a negative value.
